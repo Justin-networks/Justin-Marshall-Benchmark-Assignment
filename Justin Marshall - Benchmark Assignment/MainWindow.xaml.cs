@@ -19,6 +19,10 @@ namespace Justin_Marshall___Benchmark_Assignment
         public MainWindow()
         {
             InitializeComponent();
+            if (1==1)
+            {
+               
+            };
         }
     }
 }
