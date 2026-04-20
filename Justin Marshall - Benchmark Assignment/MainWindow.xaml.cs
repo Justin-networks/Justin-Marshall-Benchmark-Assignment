@@ -177,6 +177,49 @@ namespace Justin_Marshall___Benchmark_Assignment
             //returns negative 1 if not found
             return -1;
         }
+
+        private void btnInsertionSort_Click(object sender, RoutedEventArgs e)
+        {
+            //Insertion sort by year
+            for (int i = 1; i<movies.Count; i++)
+            {
+                Movie currentMovie = movies[i];
+                int j = i - 1;
+                //larger movies are moved to the right
+                while (j >= 0 && movies[j].Year > currentMovie.Year)
+                {
+                    movies[j + 1] = movies[j];
+                    j--;
+                    movies[j + 1] = currentMovie;
+                }
+                //refresh dtgMovies
+                dtgMovies.ItemsSource = null;
+                dtgMovies.ItemsSource = movies;
+            }
+        }
+
+        private void btnBubbleSort_Click(object sender, RoutedEventArgs e)
+        {
+            //bubble sort movies by title in alphabetical order
+            for (int i = 0; i < movies.Count -1; i++)
+            {
+                for(int j = 0; j < movies.Count - i -1; j++)
+                {
+                    //compares current movie title with the next
+                    if (string.Compare(movies[j].Title, movies[j + 1].Title) > 0)
+                    {
+                        //swaps movies when they are in the wrong order
+                        Movie temp = movies[j];
+                        movies[j] = movies[j + 1];
+                        movies[j + 1] = temp;
+                    }
+                } 
+            }
+
+            //refresh dtgMovies
+            dtgMovies.ItemsSource = null;
+            dtgMovies.ItemsSource = movies;
+        }
     }
     public class MovieHashTable
     {
