@@ -156,6 +156,110 @@ namespace Justin_Marshall___Benchmark_Assignment
             //uses the hashtable to get full movie object
             return movieHashTable.GetValue(foundID);
         }
+        private void LoadMovies()
+        {
+            //Creating movie objects
+            Movie movie1 = new() { ID = "M001", Title = "Shrek 2", Director = "Andrew Adamson", Genre = "Action", Year = 2000, Availability = true };
+            Movie movie2 = new() { ID = "M002", Title = "The Dark Knight", Director = "Christopher Nolan", Genre = "Action", Year = 2008, Availability = true };
+            Movie movie3 = new() { ID = "M003", Title = "Inception", Director = "Christopher Nolan", Genre = "Sci-Fi", Year = 2010, Availability = true };
+            Movie movie4 = new() { ID = "M004", Title = "Titanic", Director = "James Cameron", Genre = "Romance", Year = 1997, Availability = false };
+            Movie movie5 = new() { ID = "M005", Title = "The Matrix", Director = "Lana Wachowski, Lilly Wachowski", Genre = "Sci-Fi", Year = 1999, Availability = true };
+            Movie movie6 = new() { ID = "M006", Title = "Gladiator", Director = "Ridley Scott", Genre = "Action", Year = 2000, Availability = false };
+            Movie movie7 = new() { ID = "M007", Title = "Finding Nemo", Director = "Andrew Stanton", Genre = "Animation", Year = 2003, Availability = true };
+
+            //add each movie to the list out of order
+            AddMovie(movie7);
+            AddMovie(movie1);
+            AddMovie(movie6);
+            AddMovie(movie3);
+            AddMovie(movie5);
+            AddMovie(movie4);
+            AddMovie(movie2);
+        }
+        private void AddMovie(Movie movie)
+        {
+            //adds movie to the hashtable using Movie ID as key
+            movieHashTable.Insert(movie.ID, movie);
+
+            //adds movies to list to be displayed
+            movies.Add(movie);
+        }
+
+        private void btnSearchID_Click(object sender, RoutedEventArgs e)
+        {
+            //gets entered Movie ID from user input
+            string searchID = tbxSearchID.Text.Trim();
+
+            //binary search for movie
+            Movie? foundMovie = FindMovieByBinarySearch(searchID);
+
+            if (foundMovie != null)
+            {
+                //shows found movies in datagrid
+                dtgMovies.ItemsSource = null;
+                dtgMovies.ItemsSource = new List<Movie> { foundMovie };
+            }
+            else
+            {
+                MessageBox.Show("Movie ID not found.");
+            }
+        }
+        private void btnSearchTitle_Click(object sender, RoutedEventArgs e)
+        {
+            //gets entered Title from user input
+            string searchTitle = tbxSearchTitle.Text.Trim().ToLower();
+
+            //store matching movies in a List
+            List<Movie> results = new List<Movie>();
+
+            //linear search through list
+            foreach (Movie movie in movies)
+            {
+                //checks title contains searched text
+                if (movie.Title.ToLower().Contains(searchTitle))
+                {
+                    results.Add(movie);
+                }
+            }
+
+            //display matching movies
+            dtgMovies.ItemsSource = null;
+            dtgMovies.ItemsSource = results;
+
+            if (results.Count == 0)
+            {
+                MessageBox.Show("No movies found matching that title");
+            }
+        }
+
+        private void btnShowAll_Click(object sender, RoutedEventArgs e)
+        {
+            //resets movie list on datagrid
+            dtgMovies.ItemsSource = null;
+            dtgMovies.ItemsSource = movies;
+        }
+        private Movie? FindMovieByBinarySearch(string targetID)
+        {
+            //makes an array to store Movie IDs
+            string[] ids = new string[movies.Count];
+
+            //Movie IDs from list to array
+            for (int i = 0; i < movies.Count; i++)
+            {
+                ids[i] = movies[i].ID;
+            }
+
+            //sort made array before binary search
+            Array.Sort(ids);
+
+            //binary search on array
+            int index = BinarySearch(ids, targetID);
+
+            //return null when ID isn't found
+            if (index == -1)
+            {
+                return null;
+            }
 
         private int BinarySearch(string[] arr, string key)
         {
