@@ -12,8 +12,9 @@
         <Button x:Name="btnSearchID" Content="Search ID" HorizontalAlignment="Left" Margin="175,60,0,0" VerticalAlignment="Top" Width="65" Click="btnSearchID_Click"/>
         <Button x:Name="btnSearchTitle" Content="Search Title" HorizontalAlignment="Left" Margin="175,35,0,0" VerticalAlignment="Top" Click="btnSearchTitle_Click"/>
         <Button x:Name="btnShowAll" Content="Show All" HorizontalAlignment="Left" Margin="245,60,0,0" VerticalAlignment="Top" Width="65" Click="btnShowAll_Click"/>
-        <Button Content="Insertion Sort by Title" HorizontalAlignment="Left" Margin="345,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.393,0.824" Click="btnInsertionSort_Click" Height="20" Width="118"/>
-        <Button Content="Bubble Sort by Year" HorizontalAlignment="Left" Margin="468,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.393,0.824" Click="btnBubbleSort_Click" Height="20"/>
+        <Button Content="Insertion Sort by Year" HorizontalAlignment="Left" Margin="345,60,0,0" VerticalAlignment="Top" Click="btnInsertionSort_Click" Height="20" Width="118"/>
+        <Button Content="Bubble Sort by Title" HorizontalAlignment="Left" Margin="468,60,0,0" VerticalAlignment="Top" Click="btnBubbleSort_Click" Height="20"/>
         <DataGrid x:Name="dtgMovies" Margin="41,85,225,61"/>
     </Grid>
+
 </Window>
