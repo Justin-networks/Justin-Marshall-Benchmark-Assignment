@@ -17,6 +17,8 @@
         <Button Content="Insertion Sort by Year" HorizontalAlignment="Left" Margin="457,60,0,0" VerticalAlignment="Top" Click="btnInsertionSort_Click" Height="20" Width="118"/>
         <Button Content="Bubble Sort by Title" HorizontalAlignment="Left" Margin="457,35,0,0" VerticalAlignment="Top" Click="btnBubbleSort_Click" Height="20" Width="118"/>
         <DataGrid x:Name="dtgMovies" Margin="41,85,225,61"/>
+        <Button Content="Import" HorizontalAlignment="Left" Margin="430,378,0,0" VerticalAlignment="Top" Click="btnImport_Click" Width="70"/>
+        <Button Content="Export" HorizontalAlignment="Left" Margin="505,378,0,0" VerticalAlignment="Top" Click="btnExport_click" Width="70"/>
     </Grid>
 
 </Window>

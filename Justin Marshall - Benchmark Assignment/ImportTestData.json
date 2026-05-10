@@ -1,0 +1,162 @@
+[
+  {
+    "ID": "M001",
+    "Title": "The Shawshank Redemption",
+    "Director": "Frank Darabont",
+    "Genre": "Drama",
+    "Year": 1994,
+    "Availability": true
+  },
+  {
+    "ID": "M002",
+    "Title": "The Godfather",
+    "Director": "Francis Ford Coppola",
+    "Genre": "Crime",
+    "Year": 1972,
+    "Availability": false
+  },
+  {
+    "ID": "M003",
+    "Title": "Pulp Fiction",
+    "Director": "Quentin Tarantino",
+    "Genre": "Crime",
+    "Year": 1994,
+    "Availability": true
+  },
+  {
+    "ID": "M004",
+    "Title": "Schindler's List",
+    "Director": "Steven Spielberg",
+    "Genre": "Drama",
+    "Year": 1993,
+    "Availability": false
+  },
+  {
+    "ID": "M005",
+    "Title": "Forrest Gump",
+    "Director": "Robert Zemeckis",
+    "Genre": "Drama",
+    "Year": 1994,
+    "Availability": true
+  },
+  {
+    "ID": "M006",
+    "Title": "Interstellar",
+    "Director": "Christopher Nolan",
+    "Genre": "Sci-Fi",
+    "Year": 2014,
+    "Availability": true
+  },
+  {
+    "ID": "M007",
+    "Title": "The Lion King",
+    "Director": "Roger Allers, Rob Minkoff",
+    "Genre": "Animation",
+    "Year": 1994,
+    "Availability": true
+  },
+  {
+    "ID": "M008",
+    "Title": "Goodfellas",
+    "Director": "Martin Scorsese",
+    "Genre": "Crime",
+    "Year": 1990,
+    "Availability": false
+  },
+  {
+    "ID": "M009",
+    "Title": "The Silence of the Lambs",
+    "Director": "Jonathan Demme",
+    "Genre": "Thriller",
+    "Year": 1991,
+    "Availability": true
+  },
+  {
+    "ID": "M010",
+    "Title": "Spirited Away",
+    "Director": "Hayao Miyazaki",
+    "Genre": "Animation",
+    "Year": 2001,
+    "Availability": true
+  },
+  {
+    "ID": "M011",
+    "Title": "No Country for Old Men",
+    "Director": "Joel Coen, Ethan Coen",
+    "Genre": "Thriller",
+    "Year": 2007,
+    "Availability": false
+  },
+  {
+    "ID": "M012",
+    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Director": "Peter Jackson",
+    "Genre": "Fantasy",
+    "Year": 2001,
+    "Availability": true
+  },
+  {
+    "ID": "M013",
+    "Title": "Fight Club",
+    "Director": "David Fincher",
+    "Genre": "Drama",
+    "Year": 1999,
+    "Availability": false
+  },
+  {
+    "ID": "M014",
+    "Title": "Parasite",
+    "Director": "Bong Joon-ho",
+    "Genre": "Thriller",
+    "Year": 2019,
+    "Availability": true
+  },
+  {
+    "ID": "M015",
+    "Title": "Alien",
+    "Director": "Ridley Scott",
+    "Genre": "Sci-Fi",
+    "Year": 1979,
+    "Availability": false
+  },
+  {
+    "ID": "M016",
+    "Title": "Whiplash",
+    "Director": "Damien Chazelle",
+    "Genre": "Drama",
+    "Year": 2014,
+    "Availability": true
+  },
+  {
+    "ID": "M017",
+    "Title": "The Grand Budapest Hotel",
+    "Director": "Wes Anderson",
+    "Genre": "Comedy",
+    "Year": 2014,
+    "Availability": true
+  },
+  {
+    "ID": "M018",
+    "Title": "Mad Max: Fury Road",
+    "Director": "George Miller",
+    "Genre": "Action",
+    "Year": 2015,
+    "Availability": false
+  },
+  {
+    "ID": "M019",
+    "Title": "2001: A Space Odyssey",
+    "Director": "Stanley Kubrick",
+    "Genre": "Sci-Fi",
+    "Year": 1968,
+    "Availability": true
+  },
+  {
+    "ID": "M020",
+    "Title": "Eternal Sunshine of the Spotless Mind",
+    "Director": "Michel Gondry",
+    "Genre": "Romance",
+    "Year": 2004,
+    "Availability": false
+  }
+]
