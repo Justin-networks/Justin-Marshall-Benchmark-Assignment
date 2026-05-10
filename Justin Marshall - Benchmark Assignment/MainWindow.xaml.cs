@@ -157,5 +157,23 @@ namespace Justin_Marshall___Benchmark_Assignment
             dtgMovies.ItemsSource = movieList.ToList();
 
         }
+
+        private void btnImport_Click(object sender, RoutedEventArgs e)
+        {
+            //load deserialized file from ImportList method into DTGMovies
+            List<Movie> import = FileHandler.ImportList();
+            if (import != null)
+            {
+                movieList.RebuildFrom(import);
+                //may need to rebuild hashtable here, investigate in testing
+                dtgMovies.ItemsSource = movieList.ToList();
+            }
+        }
+
+        private void btnExport_click(object sender, RoutedEventArgs e)
+        {
+            //call to exportList
+            FileHandler.ExportList(movieList.ToList());
+        }
     }
 }
