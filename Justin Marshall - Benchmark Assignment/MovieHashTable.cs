@@ -8,8 +8,8 @@ namespace Justin_Marshall___Benchmark_Assignment
 {
     public class MovieHashTable
     {
-        //fixes the size of array for hashtable
-        private int size = 10;
+        //fixes the size of array for hashtable, large size an attempt to reduce collisions
+        private int size = 100;
         //arrays that stores Movie IDs
         private string[] keys;
         //array to store movie objects
@@ -26,7 +26,7 @@ namespace Justin_Marshall___Benchmark_Assignment
             //Starts hash at 0
             int hash = 0;
 
-            //adds numeric value of each character
+            //adds numeric (ASCII) value of each character
             foreach (char c in key)
             {
                 hash += c;
@@ -37,22 +37,25 @@ namespace Justin_Marshall___Benchmark_Assignment
         public void Insert(string key, Movie value)
         {
             int index = GetHash(key);
-            //if empty or key already exists, stroe value
-            if (keys[index] == null || keys[index] == key)
+            while (keys[index] != null && keys[index] != key)
             {
-                keys[index] = key;
-                values[index] = value;
+                index = (index + 1) % size;
+                
             }
-            else
-            {
-                //throws exception collisions not handled correctly
-                throw new InvalidOperationException("Has collision");
-            }
+            keys[index] = key;
+            values[index] = value;
+
         }
         public Movie GetValue(string key)
         {
             //finds array index from key
             int index = GetHash(key);
+
+            while (keys[index] != null && keys[index] != key)
+            {
+                index = (index + 1) % size;
+
+            }
 
             //check if the key in slot matches
             if (keys[index] == key)

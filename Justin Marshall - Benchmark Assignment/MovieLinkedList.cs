@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Justin_Marshall___Benchmark_Assignment
 {
+    //holds single movie and next node
     public class MovieNode
     {
         //stores a movie object
@@ -21,16 +22,20 @@ namespace Justin_Marshall___Benchmark_Assignment
     }
     public class MovieLinkedList
     {
+        //entry point to list
         private MovieNode head;
+        //new movie to end of list
         public void Add(Movie movie)
         {
             MovieNode newMovie = new MovieNode(movie);
+            //if list is empty new node becomes the head
             if (head == null)
             {
                 head = newMovie;
             }
             else
             {
+                //search last node and attach to new node
                 MovieNode current = head;
                 while (current.Next != null)
                 {
@@ -39,6 +44,7 @@ namespace Justin_Marshall___Benchmark_Assignment
                 current.Next = newMovie;
             }
         }
+        //search linked list and return all movies as list for display and sort
         public List<Movie> ToList()
         {
             List<Movie> movies = new List<Movie>();
@@ -50,6 +56,8 @@ namespace Justin_Marshall___Benchmark_Assignment
             }
             return movies;
         }
+        //clear list and rebuild from sorted movie list
+        //used after sorting to keep oreder in new linked list
         public void RebuildFrom(List<Movie> sortedMovies)
         {
             head = null;

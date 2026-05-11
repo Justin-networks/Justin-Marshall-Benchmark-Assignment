@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37111.16 d17.14
+VisualStudioVersion = 17.14.37111.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Justin Marshall - Benchmark Assignment", "Justin Marshall - Benchmark Assignment\Justin Marshall - Benchmark Assignment.csproj", "{8C330E66-AC29-49DA-A7E2-C1DAA6CCB6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A295B1E7-8AF1-48F5-B3B2-DB889A14BAFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8C330E66-AC29-49DA-A7E2-C1DAA6CCB6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C330E66-AC29-49DA-A7E2-C1DAA6CCB6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C330E66-AC29-49DA-A7E2-C1DAA6CCB6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A295B1E7-8AF1-48F5-B3B2-DB889A14BAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A295B1E7-8AF1-48F5-B3B2-DB889A14BAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A295B1E7-8AF1-48F5-B3B2-DB889A14BAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A295B1E7-8AF1-48F5-B3B2-DB889A14BAFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

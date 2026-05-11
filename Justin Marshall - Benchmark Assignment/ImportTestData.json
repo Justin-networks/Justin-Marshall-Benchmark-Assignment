@@ -13,7 +13,7 @@
     "Director": "Francis Ford Coppola",
     "Genre": "Crime",
     "Year": 1972,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M003",
@@ -29,7 +29,7 @@
     "Director": "Steven Spielberg",
     "Genre": "Drama",
     "Year": 1993,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M005",
@@ -61,7 +61,7 @@
     "Director": "Martin Scorsese",
     "Genre": "Crime",
     "Year": 1990,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M009",
@@ -85,11 +85,11 @@
     "Director": "Joel Coen, Ethan Coen",
     "Genre": "Thriller",
     "Year": 2007,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M012",
-    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Title": "LoTR: The Fellowship of the Ring",
     "Director": "Peter Jackson",
     "Genre": "Fantasy",
     "Year": 2001,
@@ -101,7 +101,7 @@
     "Director": "David Fincher",
     "Genre": "Drama",
     "Year": 1999,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M014",
@@ -117,7 +117,7 @@
     "Director": "Ridley Scott",
     "Genre": "Sci-Fi",
     "Year": 1979,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M016",
@@ -141,7 +141,7 @@
     "Director": "George Miller",
     "Genre": "Action",
     "Year": 2015,
-    "Availability": false
+    "Availability": true
   },
   {
     "ID": "M019",
@@ -157,6 +157,6 @@
     "Director": "Michel Gondry",
     "Genre": "Romance",
     "Year": 2004,
-    "Availability": false
+    "Availability": true
   }
 ]
