@@ -5,20 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Justin_Marshall___Benchmark_Assignment"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="tbxQuickLookup" HorizontalAlignment="Left" Margin="41,10,0,0" TextWrapping="Wrap" Text="M001" VerticalAlignment="Top" Width="129" Height="20"/>
-        <TextBox x:Name="tbxSearchID" HorizontalAlignment="Left" Margin="41,60,0,0" TextWrapping="Wrap" Text="M002" VerticalAlignment="Top" Width="129" Height="20"/>
-        <TextBox x:Name="tbxSearchTitle" HorizontalAlignment="Left" Margin="41,35,0,0" TextWrapping="Wrap" Text="Titanic" VerticalAlignment="Top" Width="129" Height="20"/>
-        <Button x:Name="btnQuickLookup" Content="Quick Search by ID" HorizontalAlignment="Left" Margin="175,10,0,0" VerticalAlignment="Top" Width="116" Click="btnQuickLookup_Click"/>
-        <Button x:Name="btnSearchID" Content="Binary Search by ID" HorizontalAlignment="Left" Margin="175,60,0,0" VerticalAlignment="Top" Width="116" Click="btnSearchID_Click"/>
-        <Button x:Name="btnSearchTitle" Content="Linear Search by Title" HorizontalAlignment="Left" Margin="175,35,0,0" VerticalAlignment="Top" Click="btnSearchTitle_Click" Width="116"/>
-        <Button x:Name="btnShowAll" Content="Show All" HorizontalAlignment="Left" Margin="296,60,0,0" VerticalAlignment="Top" Width="65" Click="btnShowAll_Click"/>
-        <Button Content="Insertion Sort by Year" HorizontalAlignment="Left" Margin="457,60,0,0" VerticalAlignment="Top" Click="btnInsertionSort_Click" Height="20" Width="118"/>
-        <Button Content="Bubble Sort by Title" HorizontalAlignment="Left" Margin="457,35,0,0" VerticalAlignment="Top" Click="btnBubbleSort_Click" Height="20" Width="118"/>
-        <DataGrid x:Name="dtgMovies" Margin="41,85,225,61"/>
-        <Button Content="Import" HorizontalAlignment="Left" Margin="430,378,0,0" VerticalAlignment="Top" Click="btnImport_Click" Width="70"/>
-        <Button Content="Export" HorizontalAlignment="Left" Margin="505,378,0,0" VerticalAlignment="Top" Click="btnExport_click" Width="70"/>
+        Title="MainWindow" Height="450" Width="732" Background="#EAF4F8">
+    <Grid Margin="0,0,39,5" Background="#EAF4F8">
+        <TextBox x:Name="tbxQuickLookup" HorizontalAlignment="Left" Margin="41,10,0,0" TextWrapping="Wrap" Text="M001" VerticalAlignment="Top" Width="129" Height="20" Background="White" BorderBrush="#7EC8D8" Foreground="#1A3A4A"/>
+        <TextBox x:Name="tbxSearchID" HorizontalAlignment="Left" Margin="41,60,0,0" TextWrapping="Wrap" Text="M002" VerticalAlignment="Top" Width="129" Height="20" Background="White" BorderBrush="#7EC8D8" Foreground="#1A3A4A"/>
+        <TextBox x:Name="tbxSearchTitle" HorizontalAlignment="Left" Margin="41,35,0,0" TextWrapping="Wrap" Text="Titanic" VerticalAlignment="Top" Width="129" Height="20" Background="White" BorderBrush="#7EC8D8" Foreground="#1A3A4A"/>
+        <Button x:Name="btnQuickLookup" Content="Quick Search by ID" HorizontalAlignment="Left" Margin="175,10,0,0" VerticalAlignment="Top" Width="116" Click="btnQuickLookup_Click" Background="#2A9DB5" Foreground="White" BorderBrush="#1E7F96"/>
+        <Button x:Name="btnSearchID" Content="Binary Search by ID" HorizontalAlignment="Left" Margin="175,60,0,0" VerticalAlignment="Top" Width="116" Click="btnSearchID_Click" Background="#2A9DB5" Foreground="White" BorderBrush="#1E7F96"/>
+        <Button x:Name="btnSearchTitle" Content="Linear Search by Title" HorizontalAlignment="Left" Margin="175,35,0,0" VerticalAlignment="Top" Click="btnSearchTitle_Click" Width="116" Background="#2A9DB5" Foreground="White" BorderBrush="#1E7F96"/>
+        <Button x:Name="btnShowAll" Content="Show All" HorizontalAlignment="Left" Margin="296,60,0,0" VerticalAlignment="Top" Width="65" Click="btnShowAll_Click" Background="#5BB8C8" Foreground="White" BorderBrush="#3A9AAB"/>
+        <Button Content="Insertion Sort by Year" HorizontalAlignment="Left" Margin="560,35,0,0" VerticalAlignment="Top" Click="btnInsertionSort_Click" Height="20" Width="118" Background="#4DB6C8" Foreground="White" BorderBrush="#2E9AAF"/>
+        <Button Content="Bubble Sort by Title" HorizontalAlignment="Left" Margin="560,10,0,0" VerticalAlignment="Top" Click="btnBubbleSort_Click" Height="20" Width="118" Background="#4DB6C8" Foreground="White" BorderBrush="#2E9AAF"/>
+        <DataGrid x:Name="dtgMovies" Margin="41,85,2,49" VerticalAlignment="Top" Background="White" RowBackground="White" AlternatingRowBackground="#DFF2F7" BorderBrush="#7EC8D8" HorizontalGridLinesBrush="#BDE6EF" VerticalGridLinesBrush="#BDE6EF"/>
+        <Button Content="Import" HorizontalAlignment="Left" Margin="608,0,0,24" VerticalAlignment="Bottom" Click="btnImport_Click" Width="70" Background="#2A9DB5" Foreground="White" BorderBrush="#1E7F96"/>
+        <Button Content="Export" HorizontalAlignment="Left" Margin="608,0,0,0" VerticalAlignment="Bottom" Click="btnExport_click" Width="70" RenderTransformOrigin="0.481,-1.084" Background="#2A9DB5" Foreground="White" BorderBrush="#1E7F96"/>
+        <TextBox x:Name="tbxBorrowerName" HorizontalAlignment="Left" Margin="150,0,0,26" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="206" Background="White" BorderBrush="#7EC8D8" Foreground="#1A3A4A"/>
+        <Button Content="Borrow" HorizontalAlignment="Left" Margin="150,374,0,0" VerticalAlignment="Bottom" Click="btnBorrow_Click" Width="52" Background="#48C774" Foreground="White" BorderBrush="#2EA84E"/>
+        <Button Content="Return" HorizontalAlignment="Left" Margin="207,374,0,0" VerticalAlignment="Bottom" Click="btnReturn_Click" Width="52" Background="#FF6B6B" Foreground="White" BorderBrush="#D94F4F"/>
+        <Label Content="Borrower's Name:" HorizontalAlignment="Left" Margin="41,0,0,22" VerticalAlignment="Bottom" Height="25" Width="104" Foreground="#1A3A4A"/>
     </Grid>
-
 </Window>

@@ -16,7 +16,7 @@ namespace Justin_Marshall___Benchmark_Assignment
             {
                 Movie currentMovie = movies[i];
                 int j = i - 1;
-                //larger movies are moved to the right
+                //larger year movies are moved to the right 1 position to make room
                 while (j >= 0 && movies[j].Year > currentMovie.Year)
                 {
                     movies[j + 1] = movies[j];
@@ -36,7 +36,7 @@ namespace Justin_Marshall___Benchmark_Assignment
                     //compares current movie title with the next
                     if (string.Compare(movies[j].Title, movies[j + 1].Title) > 0)
                     {
-                        //swaps movies when they are in the wrong order
+                        //swaps adjacent movies when they are out of aplhabetical order
                         Movie temp = movies[j];
                         movies[j] = movies[j + 1];
                         movies[j + 1] = temp;

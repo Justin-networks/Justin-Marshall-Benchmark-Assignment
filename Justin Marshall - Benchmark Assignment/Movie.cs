@@ -13,6 +13,9 @@ namespace Justin_Marshall___Benchmark_Assignment
         public string Director { get; set; }
         public string Genre { get; set; }
         public int Year { get; set; }
+        //true available, false unavalable
         public bool Availability { get; set; }
+        //person currently burrowing movie, null is no person
+        public string Borrower { get; set; }
     }
 }
